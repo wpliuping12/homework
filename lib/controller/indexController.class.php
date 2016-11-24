@@ -31,7 +31,7 @@ class indexController
         );
         $newObj -> insert($data);
     }
-    public function namead11231232d(){
+    public function nameliuping(){
         extract($_POST);
         $name = daddslashes($name);
         $newObj = M('user');
