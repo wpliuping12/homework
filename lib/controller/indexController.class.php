@@ -31,4 +31,13 @@ class indexController
         );
         $newObj -> insert($data);
     }
+    public function nameadd(){
+        extract($_POST);
+        $name = daddslashes($name);
+        $newObj = M('user');
+        $data = array(
+            'name' => $name
+        );
+        $newObj -> insert($data);
+    }
 }
