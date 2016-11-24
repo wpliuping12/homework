@@ -22,7 +22,16 @@ class indexController
         $newObj = M('user');
         return $newObj -> find_all();
     }
-    public function nameadd(){
+    public function namead12d(){
+        extract($_POST);
+        $name = daddslashes($name);
+        $newObj = M('user');
+        $data = array(
+            'name' => $name
+        );
+        $newObj -> insert($data);
+    }
+    public function namead11231232d(){
         extract($_POST);
         $name = daddslashes($name);
         $newObj = M('user');
